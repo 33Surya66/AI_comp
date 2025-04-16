@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+:root {
+  --primary-blue: #1e40af;
+  --primary-blue-dark: #1e3a8a;
+  --dark-bg: #0a0a0a;
+  --dark-surface: #121212;
+  --dark-surface-lighter: #1a1a1a;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+}
+
+body {
+  @apply bg-black m-0 w-full min-h-screen;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Container styles */
+.container {
+  @apply w-full max-w-none px-0;
+}
+
+/* Navbar styles */
+nav, .navbar {
+  @apply w-full bg-black border-b border-gray-800 px-4 py-3;
+}
+
+/* Dark mode overrides - much darker */
+.bg-white {
+  @apply bg-black;
+}
+
+.text-gray-900 {
+  @apply text-gray-100;
+}
+
+.text-gray-700 {
+  @apply text-gray-300;
+}
+
+.text-gray-600 {
+  @apply text-gray-400;
+}
+
+.text-gray-500 {
+  @apply text-gray-400;
+}
+
+.bg-gray-50 {
+  @apply bg-black;
+}
+
+.bg-gray-100 {
+  @apply bg-gray-900;
+}
+
+.bg-gray-200 {
+  @apply bg-gray-800;
+}
+
+/* Blue accents - deeper and more saturated */
+.bg-blue-100 {
+  @apply bg-blue-900;
+}
+
+.bg-blue-600 {
+  @apply bg-blue-800;
+}
+
+.text-blue-600 {
+  @apply text-blue-400;
+}
+
+.text-blue-700 {
+  @apply text-blue-300;
+}
+
+.text-blue-800 {
+  @apply text-blue-200;
+}
+
+.border-gray-200 {
+  @apply border-gray-800;
+}
+
+.border-gray-300 {
+  @apply border-gray-700;
+}
+
+.border-blue-300 {
+  @apply border-blue-800;
+}
+
+.bg-blue-50 {
+  @apply bg-blue-900;
+}
+
+/* Button styles */
+button, .btn {
+  @apply bg-gray-800 hover:bg-gray-700 text-gray-200 border border-gray-700;
+}
+
+button.primary, .btn-primary {
+  @apply bg-blue-900 hover:bg-blue-800 text-blue-100 border border-blue-800;
+}
+
+/* Input styles */
+input, select, textarea {
+  @apply bg-gray-900 border border-gray-700 text-gray-200 focus:border-blue-700 focus:ring-blue-800;
+}
+
+/* Card styles */
+.card {
+  @apply bg-gray-900 border border-gray-800 rounded-lg shadow-lg;
+}
+
+/* Shadow overrides - deeper shadows */
+.shadow-md {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+}
+
+/* Full-width navbar and containers */
+.navbar, header, .header {
+  @apply w-full px-0 mx-0;
+}
+
+/* Remove any max-width constraints on containers */
+.container, .content, main {
+  @apply max-w-none mx-0 px-4;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-surface-lighter);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
