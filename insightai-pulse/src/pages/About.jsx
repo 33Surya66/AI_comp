@@ -62,7 +62,7 @@ const About = () => {
         </div>
         
         {/* Team Section */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+        {/* <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -77,7 +77,7 @@ const About = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
         
         {/* Contact Section */}
         <div className="bg-blue-50 rounded-lg p-6">

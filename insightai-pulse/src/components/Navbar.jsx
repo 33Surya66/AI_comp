@@ -25,9 +25,9 @@ const Navbar = () => {
                 <Link to="/dashboard" className={`${isActive('/dashboard') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} px-3 py-2 rounded-md text-sm font-medium`}>
                   Dashboard
                 </Link>
-                <Link to="/comparison" className={`${isActive('/comparison') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} px-3 py-2 rounded-md text-sm font-medium`}>
+                {/* <Link to="/comparison" className={`${isActive('/comparison') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} px-3 py-2 rounded-md text-sm font-medium`}>
                   AI Comparison
-                </Link>
+                </Link> */}
                 <Link to="/about" className={`${isActive('/about') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} px-3 py-2 rounded-md text-sm font-medium`}>
                   About
                 </Link>
@@ -63,9 +63,9 @@ const Navbar = () => {
             <Link to="/dashboard" onClick={() => setIsMenuOpen(false)} className={`${isActive('/dashboard') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} block px-3 py-2 rounded-md text-base font-medium`}>
               Dashboard
             </Link>
-            <Link to="/comparison" onClick={() => setIsMenuOpen(false)} className={`${isActive('/comparison') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} block px-3 py-2 rounded-md text-base font-medium`}>
+            {/* <Link to="/comparison" onClick={() => setIsMenuOpen(false)} className={`${isActive('/comparison') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} block px-3 py-2 rounded-md text-base font-medium`}>
               AI Comparison
-            </Link>
+            </Link> */}
             <Link to="/about" onClick={() => setIsMenuOpen(false)} className={`${isActive('/about') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} block px-3 py-2 rounded-md text-base font-medium`}>
               About
             </Link>
