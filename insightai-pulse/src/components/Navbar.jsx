@@ -31,6 +31,12 @@ const Navbar = () => {
                 <Link to="/about" className={`${isActive('/about') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} px-3 py-2 rounded-md text-sm font-medium`}>
                   About
                 </Link>
+                {/* <NavLink to="/prediction" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                  Churn Prediction
+                </NavLink> */}
+                <Link to="/prediction" onClick={() => setIsMenuOpen(false)} className={`${isActive('/churn') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} block px-3 py-2 rounded-md text-base font-medium`}>
+                  Churn Prediction
+                </Link>
               </div>
             </div>
           </div>
@@ -66,8 +72,14 @@ const Navbar = () => {
             {/* <Link to="/comparison" onClick={() => setIsMenuOpen(false)} className={`${isActive('/comparison') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} block px-3 py-2 rounded-md text-base font-medium`}>
               AI Comparison
             </Link> */}
+            {/* <NavLink to="/prediction" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+              Churn Prediction
+            </NavLink> */}
             <Link to="/about" onClick={() => setIsMenuOpen(false)} className={`${isActive('/about') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} block px-3 py-2 rounded-md text-base font-medium`}>
               About
+            </Link>
+            <Link to="/churn" onClick={() => setIsMenuOpen(false)} className={`${isActive('/churn') ? 'bg-blue-700 text-white' : 'text-white hover:bg-blue-500 hover:bg-opacity-75'} block px-3 py-2 rounded-md text-base font-medium`}>
+              Churn Prediction
             </Link>
           </div>
         </div>

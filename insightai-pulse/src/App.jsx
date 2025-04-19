@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Comparison from './pages/Comparison';
 import About from './pages/About';
+import Prediction from './pages/Prediction.jsx';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/comparison" element={<Comparison />} />
             <Route path="/about" element={<About />} />
+            <Route path="prediction" element={<Prediction />} />
           </Routes>
         </main>
         <Footer />
